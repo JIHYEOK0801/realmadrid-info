@@ -1,0 +1,79 @@
+@keyframes greetingscreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+#index-greeting-realmadrid {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  animation: 0.5s ease-in-out 2s forwards greetingscreen;
+}
+
+#index-greeting-realmadrid img {
+  width: 50vw;
+  height: 50vh;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: center;
+}
+.main-menu__column:first-child {
+  background-image: url("../../img/santiago.jpg");
+}
+.main-menu__column:nth-child(2) {
+  background-image: url("../../img/squad.jpg");
+}
+.main-menu__column:last-child {
+  background-image: url("../../img/trophy.jpg");
+}
+@keyframes curtainanimation {
+  from {
+    width: 33.33vw;
+    right: 0px;
+  }
+  to {
+    width: 0vw;
+    visibility: hidden;
+    right: 0px;
+  }
+}
+.curtain {
+  background-color: white;
+  width: 33.33vw;
+  height: 100vh;
+  position: absolute;
+  animation: 0.3s linear 3s forwards curtainanimation;
+}
+.main-menu__column {
+  position: relative;
+}
+.main-menu__column__text,
+.main-menu__column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33vw;
+  height: 100vh;
+  background-size: 33.33vw 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: "Staatliches", sans-serif;
+  font-size: 60px;
+  font-weight: 1000;
+  transition: all 0.2s ease-in-out;
+}
+.main-menu__column__text:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
