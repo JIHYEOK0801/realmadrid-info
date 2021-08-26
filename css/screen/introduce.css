@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(245, 245, 245);
+  background-color: rgba(245, 245, 245, 1);
   padding: 0px 20px;
   padding-top: 120px;
 }
@@ -55,15 +55,106 @@
 }
 .emblem-screen__emblem__introduce,
 .stadium-screen__introduce {
+  display: flex;
+  flex-direction: column;
   margin-top: 20px;
   font-size: 23px;
   line-height: 35px;
   font-weight: 700;
 }
-.stadium-screen__introduce {
-  font-size: 25px;
+.stadium-screen__introduce span {
+  font-size: 30px;
+  line-height: 16px;
 }
 
-.stadium-screen__img {
-  width: 50%;
+.celebrity-screen__slidebox,
+.stadium-screen__slidebox {
+  width: var(--stadium-slide-box-width);
+  height: var(--stadium-slide-box-height);
+  background-color: rgba(0, 0, 0, 1);
+  overflow: hidden;
+  position: relative;
+}
+.celebrity-screen__slidebox__slide,
+.stadium-screen__slidebox__slide {
+  width: var(--stadium-slide-width);
+  height: var(--stadium-slide-box-height);
+  display: flex;
+  flex-wrap: nowrap;
+  transition: all 0.5s ease-in-out;
+}
+
+.celebrity-screen__slidebox__slide__imgbox,
+.stadium-screen__slidebox__slide__imgbox {
+  width: var(--stadium-slide-box-width);
+  height: var(--stadium-slide-box-height);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.celebrity-screen__slidebox__slide__imgbox__img,
+.stadium-screen__slidebox__slide__imgbox__img {
+  height: 100%;
+}
+.celebrity-screen__slidebox__goright,
+.stadium-screen__slidebox__goright {
+  right: 0;
+}
+.celebrity-screen__slidebox__goleft,
+.celebrity-screen__slidebox__goright,
+.stadium-screen__slidebox__goleft,
+.stadium-screen__slidebox__goright {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 50px;
+  height: var(--stadium-slide-box-height);
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  font-size: 32px;
+  transition: all 0.1s linear;
+  z-index: 1;
+}
+.celebrity-screen__slidebox__goleft,
+.stadium-screen__slidebox__goleft {
+  justify-content: flex-start;
+}
+.celebrity-screen__slidebox__goright,
+.stadium-screen__slidebox__goright {
+  justify-content: flex-end;
+}
+.celebrity-screen__slidebox__goleft:hover,
+.celebrity-screen__slidebox__goright:hover,
+.stadium-screen__slidebox__goleft:hover,
+.stadium-screen__slidebox__goright:hover {
+  font-size: 50px;
+}
+
+.celebrity-screen__introduce {
+  width: 100%;
+  height: 400px;
+}
+
+.celebrity-screen__introduce__raul,
+.celebrity-screen__introduce__zidane,
+.celebrity-screen__introduce__casillas,
+.celebrity-screen__introduce__ramos,
+.celebrity-screen__introduce__ronaldo {
+  display: none;
+  flex-direction: column;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.celebrity-screen__introduce__raul p,
+.celebrity-screen__introduce__zidane p,
+.celebrity-screen__introduce__casillas p,
+.celebrity-screen__introduce__ramos p,
+.celebrity-screen__introduce__ronaldo p {
+  font-size: 23px;
+  line-height: 35px;
 }

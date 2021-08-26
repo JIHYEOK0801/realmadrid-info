@@ -1,0 +1,56 @@
+@keyframes navbarAnimation {
+  25% {
+    left: 0px;
+  }
+  50% {
+    left: 0px;
+  }
+  75% {
+    left: 0px;
+  }
+  100% {
+    left: -120px;
+  }
+}
+.navigation-bar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+  width: 130px;
+  height: 210px;
+  top: 200px;
+  left: -120px;
+  cursor: pointer;
+  color: rgba(1, 1, 1, 1);
+  animation: 3s ease-in-out navbarAnimation;
+  transition: all ease-in-out 0.5s;
+}
+
+.navigation-bar:hover {
+  left: 0px;
+}
+.navigation-bar__destination:hover {
+  color: white;
+}
+
+.navigation-bar__destination {
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  height: 210px;
+}
+.navigation-bar__destination:first-child {
+  border-top-right-radius: 15px;
+  background-color: rgb(231, 102, 106);
+}
+.navigation-bar__destination:nth-child(2) {
+  background-color: rgb(245, 217, 123);
+}
+
+.navigation-bar__destination:last-child {
+  background-color: rgb(24, 123, 188);
+  border-bottom-right-radius: 15px;
+}

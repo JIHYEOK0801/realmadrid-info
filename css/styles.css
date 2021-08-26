@@ -1,8 +1,9 @@
 @import "reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&family=Staatliches&display=swap");
-
+@import "variable.css";
 /*components*/
 @import "components/header.css";
+@import "components/navbar.css";
 /*screen*/
 @import "screen/index.css";
 @import "screen/introduce.css";
