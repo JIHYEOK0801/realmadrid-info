@@ -1,0 +1,148 @@
+.players-screen,
+.headcoach-screen {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(245, 245, 245, 1);
+  padding: 0px 20px;
+  padding-top: 120px;
+}
+.headcoach-screen__title,
+.players-screen__title {
+  display: flex;
+  width: 100%;
+  font-size: 40px;
+  font-weight: 700;
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+  padding: 10px 0px;
+}
+.players-screen__content,
+.headcoach-screen__content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.players-screen__content__column,
+.headcoach-screen__content__column {
+  width: 50%;
+  height: 100%;
+  padding: 0px 10px;
+}
+
+.headcoach-screen__content__column__img {
+  width: 100%;
+  height: 85%;
+}
+.headcoach-screen__content__column__introduce {
+  width: 100%;
+  height: 95%;
+}
+.headcoach-screen__content__column__introduce span {
+  font-size: 30px;
+  font-weight: 700;
+}
+.headcoach-screen__content__column__introduce p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.players-screen__content__column__board {
+  width: 100%;
+  height: 90%;
+  background-image: url("../../img/pitch.png");
+  background-repeat: round;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.players-screen__content__column__board__backwards,
+.players-screen__content__column__board__mid,
+.players-screen__content__column__board__forwards,
+.players-screen__content__column__board__goalie {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 25%;
+  justify-content: center;
+  
+}
+.board__circle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  font-weight: 700;
+}
+.players-screen__content__column__board__forwards__circles .board__circle {
+  background-color: tomato;
+}
+.board-description {
+  padding: 5%;
+  font-size: 40px;
+  font-weight: 700;
+}
+.players-screen__content__column__board__forwards__circles :first-child {
+  left: 20%;
+  bottom: 20%;
+}
+.players-screen__content__column__board__forwards__circles :nth-child(2) {
+  left: 47.5%;
+  bottom: 35%;
+}
+.players-screen__content__column__board__forwards__circles :last-child {
+  right: 20%;
+  bottom: 20%;
+}
+
+.players-screen__content__column__board__mid__circles .board__circle {
+  background-color: greenyellow;
+}
+.players-screen__content__column__board__mid__circles :first-child {
+  left: 20%;
+  bottom: 25%;
+}
+.players-screen__content__column__board__mid__circles :nth-child(2) {
+  left: 47.5%;
+  bottom: 5%;
+}
+.players-screen__content__column__board__mid__circles :last-child {
+  right: 20%;
+  bottom: 25%;
+}
+
+.players-screen__content__column__board__backwards__circles .board__circle {
+  background-color: skyblue;
+}
+.players-screen__content__column__board__backwards__circles :first-child {
+  left: 15%;
+  bottom: 25%;
+}
+.players-screen__content__column__board__backwards__circles :nth-child(2) {
+  left: 34.5%;
+  bottom: 10%;
+}
+.players-screen__content__column__board__backwards__circles :nth-child(3) {
+  left: 60%;
+  bottom: 10%;
+}
+.players-screen__content__column__board__backwards__circles :last-child {
+  right: 15%;
+  bottom: 25%;
+}
+
+
+.players-screen__content__column__board__goalie__circles .board__circle {
+    background-color: yellow;
+  }
+  .players-screen__content__column__board__goalie__circles :first-child {
+    left: 47.5%;
+    bottom: 35%;
