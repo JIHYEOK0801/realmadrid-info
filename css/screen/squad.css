@@ -58,6 +58,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
 }
 
 .players-screen__content__column__board__backwards,
@@ -69,8 +70,38 @@
   width: 100%;
   height: 25%;
   justify-content: center;
-  
+  color: rgba(0, 0, 0, 0);
 }
+.players-screen__content__column__board__backwards:hover {
+  color: skyblue;
+}
+
+.players-screen__content__column__board__mid:hover {
+  color: greenyellow;
+}
+
+.players-screen__content__column__board__forwards:hover {
+  color: tomato;
+}
+
+.players-screen__content__column__board__goalie:hover {
+  color: yellow;
+}
+
+.players-screen__content__column__board__backwards:hover,
+.players-screen__content__column__board__mid:hover,
+.players-screen__content__column__board__forwards:hover,
+.players-screen__content__column__board__goalie:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.2s;
+}
+.players-screen__content__column__board__backwards:hover .board__circle,
+.players-screen__content__column__board__mid:hover .board__circle,
+.players-screen__content__column__board__forwards:hover .board__circle,
+.players-screen__content__column__board__goalie:hover .board__circle {
+  background-color: white;
+}
+
 .board__circle {
   position: absolute;
   display: flex;
@@ -81,13 +112,14 @@
   border: none;
   border-radius: 50%;
   font-weight: 700;
+  color: rgba(0, 0, 0, 1);
 }
 .players-screen__content__column__board__forwards__circles .board__circle {
   background-color: tomato;
 }
 .board-description {
   padding: 5%;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 700;
 }
 .players-screen__content__column__board__forwards__circles :first-child {
@@ -139,10 +171,49 @@
   bottom: 25%;
 }
 
-
 .players-screen__content__column__board__goalie__circles .board__circle {
-    background-color: yellow;
-  }
-  .players-screen__content__column__board__goalie__circles :first-child {
-    left: 47.5%;
-    bottom: 35%;
+  background-color: yellow;
+}
+.players-screen__content__column__board__goalie__circles :first-child {
+  left: 47.5%;
+  bottom: 35%;
+}
+
+.players-screen__content__column__pictures {
+  width: 100%;
+  height: 85%;
+  background-color: pink;
+}
+.players-screen__content__column__pictures__initletter {
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 700;
+}
+.players-screen__content__column__pictures__initletter span {
+  text-align: center;
+}
+.players-screen__content__column__pictures__picturebox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.players-screen__content__column__pictures__picturebox__column {
+  width: 33.33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid;
+}
+.players-screen__content__column__pictures__picturebox__row {
+  width: 100%;
+  height: 33.33%;
+  display: flex;
+  border: 1px solid;
+}
