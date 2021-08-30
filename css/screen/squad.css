@@ -182,6 +182,7 @@
 .players-screen__content__column__pictures {
   width: 100%;
   height: 90%;
+  background-color: white;
 }
 @keyframes initletterAnimation {
   0% {
