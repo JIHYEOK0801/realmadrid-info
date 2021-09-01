@@ -1,0 +1,48 @@
+.history-screen {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(245, 245, 245, 1);
+  padding: 0px 20px;
+  padding-top: 120px;
+}
+.history-screen__title {
+  display: flex;
+  width: 100%;
+  font-size: 40px;
+  font-weight: 700;
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+  padding: 10px 0px;
+}
+.history-screen__box {
+  width: 100%;
+  height: 75%;
+  background: round url("../../img/history.jpg");
+}
+.history-screen__box__description {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+.history-screen__box__description__column {
+  width: 50%;
+  height: 100%;
+  color: white;
+  padding: 30px;
+}
+.history-screen__box__description__column > span {
+  font-size: 40px;
+  font-weight: 700;
+}
+.history-screen__box__description__column p > span {
+  font-size: 30px;
+  font-weight: 700;
+}
+.history-screen__box__description__column p {
+  font-size: 20px;
+  line-height: 35px;
+}

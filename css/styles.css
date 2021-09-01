@@ -8,7 +8,7 @@
 @import "screen/index.css";
 @import "screen/introduce.css";
 @import "screen/squad.css";
-
+@import "screen/history.css";
 body {
   font-family: "Noto Sans KR", sans-serif;
 }
