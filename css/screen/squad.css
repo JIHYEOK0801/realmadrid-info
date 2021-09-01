@@ -53,8 +53,7 @@
 .players-screen__content__column__board {
   width: 100%;
   height: 90%;
-  background-image: url("../../img/pitch.png");
-  background-repeat: round;
+  background: url("../../img/pitch.png") round no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
