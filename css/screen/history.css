@@ -8,6 +8,17 @@
   padding: 0px 20px;
   padding-top: 120px;
 }
+.highlights-screen {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(245, 245, 245, 1);
+  padding: 0px 20px;
+  padding-top: 120px;
+}
+.highlights-screen__title,
 .history-screen__title {
   display: flex;
   width: 100%;
@@ -17,6 +28,7 @@
   margin-bottom: 20px;
   padding: 10px 0px;
 }
+
 .history-screen__box {
   width: 100%;
   height: 75%;
@@ -45,4 +57,14 @@
 .history-screen__box__description__column p {
   font-size: 20px;
   line-height: 35px;
+}
+
+.highlights-screen__box {
+  width: 100%;
+  height: 85%;
+  background-color: black;
+}
+iframe {
+  width: 100%;
+  height: 100%;
 }
