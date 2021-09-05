@@ -1,5 +1,5 @@
 .history-screen {
-  width: 100%;
+  width: 1339px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
   padding-top: 120px;
 }
 .highlights-screen {
-  width: 100%;
+  width: 1339px;
   height: 85vh;
   display: flex;
   flex-direction: column;

@@ -23,5 +23,8 @@ body::-webkit-scrollbar-track {
   background-color: grey;
 }
 .main-screen {
-  padding: 0px 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
